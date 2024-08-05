@@ -1,20 +1,166 @@
-﻿/* Set padding to keep content from hitting the edges */
-.body-content {
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+﻿
+::-webkit-scrollbar{
+    width:16px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 100%, .3);
+}
+body {
+    
+    color: white;
+    background: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px;
+}
+    body::-webkit-scrollbar, body::-webkit-scrollbar-button{
+        display: none;
+    }
+
+.small-black-bg {
+    background: #121212;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.dark-light-bg {
+    background: #1f1f1f;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+li {
+    list-style: none;
 }
+
+.bd-rd {
+    border-radius: 8px;
+}
+
+.btn {
+    border-radius: 25px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.policy {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.add-playlist {
+    height: 132px;
+    overflow-y: auto;
+    scrollbar-color: hsla(0, 0%, 100%, .3) transparent;
+}
+.add-playlist::-webkit-scrollbar-thumb{
+    display:block;
+    
+}
+    .add-playlist::-webkit-scrollbar {
+        display: none;
+    }
+.top-header,.content-main{
+    padding:20px;
+}
+.arrow{
+    gap:8px;
+}
+.arrow span{
+    justify-content:center;
+    width:32px;
+    height:32px;
+    display:flex;
+    
+}
+
+.post-img img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.post-img{
+    position:relative;
+    min-block-size:160px;
+}
+.post-content{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+.play-btn {
+    background: #1ed760;
+    -webkit-transform: translateY(8px);
+    transition: all .2s ease-out;
+    visibility: hidden;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    z-index:2;
+}
+.content-main {
+    background: linear-gradient(#1f1f1f 5%,#121212 65%);
+    border-radius: 0 0 8px 8px;
+}
+.post-info *{
+    
+    display: -webkit-box;
+    text-overflow:ellipsis;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+.post-info h5{
+    font-size:17px;
+
+}
+.post-info p{
+    font-size:15px;
+}
+a:hover{
+    color: unset !important;
+}
+.footer .social{
+    gap:10px;
+}
+.footer p{
+    margin-bottom:10px;
+}
+.footer .social a{
+    width:40px;
+    height: 40px;
+}
+.top-header{
+    position:sticky;
+    top:0;
+    left:0;
+    right:0;
+    border-radius:8px 8px 0 0;
+    z-index:3
+}
+.sidebar-left{
+    height:86vh;
+}
+.content {
+    height: 86vh;
+    overflow-y: auto;
+    scrollbar-color: hsla(0, 0%, 100%, .3) transparent;
+}
+.content::-webkit-scrollbar {
+        display: none;
+}
+.ft-signup {
+    background: linear-gradient(90deg, #af2896, #509bf5);
+}
+
+
+
